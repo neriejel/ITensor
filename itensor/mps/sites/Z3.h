@@ -88,7 +88,7 @@ class Z3Site
             Op.set(One,OneP,cos(2.*Pi/3.));
             Op.set(Two,TwoP,cos(4.*Pi/3.));
 
-            auto TauI = IQTensor(s,sP);
+            auto TauI = IQTensor(dag(s),sP);
             TauI.set(One,OneP,sin(2.*Pi/3.));
             TauI.set(Two,TwoP,sin(4.*Pi/3.));
 
@@ -101,7 +101,7 @@ class Z3Site
             Op.set(One,OneP,cos(2.*Pi/3.));
             Op.set(Two,TwoP,cos(4.*Pi/3.));
 
-            auto TauI = IQTensor(s,sP);
+            auto TauI = IQTensor(dag(s),sP);
             TauI.set(One,OneP,-sin(2.*Pi/3.));
             TauI.set(Two,TwoP,-sin(4.*Pi/3.));
 
